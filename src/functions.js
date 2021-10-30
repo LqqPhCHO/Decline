@@ -97,6 +97,11 @@ export function gameLoop(act){
                     long_timer = Math.floor(long_timer * 0.95);
                 }
                 webWorker.mt = main_timer;
+		    
+		main_timer=main_timer*0.1;
+                mid_timer=mid_timer*0.1;
+                long_timer=long_timer*0.1;
+
 
                 let dt = Date.now();
                 let timeDiff = dt - global.stats.current;

@@ -98,9 +98,9 @@ export function gameLoop(act){
                 }
                 webWorker.mt = main_timer;
 		    
-		main_timer=main_timer*0.2;
-                mid_timer=mid_timer*0.2;
-                long_timer=long_timer*0.2;
+		main_timer=main_timer*0.125;
+                mid_timer=mid_timer*0.125;
+                long_timer=long_timer*0.125;
 
 
                 let dt = Date.now();
